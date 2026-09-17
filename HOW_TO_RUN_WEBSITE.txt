@@ -1,0 +1,43 @@
+========================================================
+         GOD'S EYE VIEW - HOW TO RUN & USE AS A WEBSITE
+========================================================
+
+All dependencies have been installed and the website has been compiled!
+
+OPTION 1: RUN AS A LOCAL LIVE WEBSITE (Recommended)
+----------------------------------------------------
+Simply double-click:
+    START_WEBSITE.bat
+
+This will:
+1. Start the local server with all live data proxy providers (flights, satellites, earthquakes, cameras, etc.).
+2. Automatically launch your default web browser to:
+   http://localhost:4173
+
+To stop the website server, close the command window or press Ctrl+C.
+
+
+OPTION 2: PRODUCTION BUILD & STATIC HOSTING
+----------------------------------------------------
+The static website has already been compiled into:
+    gods-eye-view-main\dist\
+
+This folder contains the complete, ready-to-deploy static website:
+- index.html
+- assets/ (JavaScript, CSS, geospatial datasets)
+- cesium/ (Cesium 3D Globe library and workers)
+- models/ (3D aircraft/vessel models)
+- events/ (historical events and markers)
+
+You can:
+- Deploy the contents of the "dist" folder to any web host (Vercel, Netlify, Cloudflare Pages, GitHub Pages, or an Nginx/Apache server).
+- Rebuild the production website anytime by double-clicking:
+    BUILD_WEBSITE.bat
+
+
+OPTIONAL ENHANCEMENTS:
+----------------------------------------------------
+God's Eye View works out-of-the-box with Esri satellite imagery and keyless data.
+If you want high-res photorealistic 3D tiles, AI voice control, or additional feeds:
+- Copy .env.example to .env inside "gods-eye-view-main\" and add your API keys (Cesium ion, Google Maps, OpenAI, etc.).
+- Or click "POWER UP" directly in the website interface to enter your keys.
